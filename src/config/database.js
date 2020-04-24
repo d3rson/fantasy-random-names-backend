@@ -6,6 +6,5 @@ module.exports = {
   database: 'dbfrn',
   define: {
     timestamps: true,
-    underscored: true,
   }
 }

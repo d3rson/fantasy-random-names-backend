@@ -1,9 +1,7 @@
 const { Model, DataTypes, Sequelize } = require('sequelize');
-// const Race = require('./Race');
-// const Sex = require('./Sex');
 
-class Nomes extends Model {
-  static init(sequelize){
+class Names extends Model {
+  static init(sequelize) {
     super.init({
       name: DataTypes.STRING,
       raceId: {
@@ -23,9 +21,11 @@ class Nomes extends Model {
         }
       }
     }, {
-      sequelize
+      sequelize,
+      modelName: 'names'
     })
   }
 }
 
-module.exports = Nomes;
+module.exports = Names;
+
