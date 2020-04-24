@@ -22,7 +22,7 @@ class Names extends Model {
       }
     }, {
       sequelize,
-      modelName: 'names'
+      modelName: 'Names'
     })
   }
 }

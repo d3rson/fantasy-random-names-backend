@@ -4,6 +4,7 @@ const RaceController = require('./controllers/RaceController');
 const SexController = require('./controllers/SexController');
 const NamesController = require('./controllers/NamesController');
 const LastnamesController = require('./controllers/LastnamesController');
+const RandomController = require('./controllers/RandomController');
 
 const routes = express.Router();
 
@@ -20,5 +21,8 @@ routes.get('/race', RaceController.index);
 routes.get('/sex', SexController.index);
 routes.get('/name', NamesController.index);
 routes.get('/lastname', LastnamesController.index);
+
+//RANDOM
+routes.get('/generate', RandomController.index);
 
 module.exports = routes; 

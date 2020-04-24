@@ -22,7 +22,7 @@ class Lastnames extends Model {
       }
     }, {
       sequelize,
-      modelName: 'lastnames'
+      modelName: 'Lastnames'
     })
   }
 }

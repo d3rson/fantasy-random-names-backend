@@ -3,13 +3,13 @@ const dbConfig = require('../config/database');
 
 const connection = new Sequelize(dbConfig);
 
-const User = require('../models/User');
+const Users = require('../models/User');
 const Race = require('../models/Race');
 const Sex = require('../models/Sex');
 const Names = require('../models/Names');
 const Lastnames = require('../models/Lastnames');
 
-User.init(connection);
+Users.init(connection);
 Race.init(connection);
 Sex.init(connection);
 Names.init(connection);

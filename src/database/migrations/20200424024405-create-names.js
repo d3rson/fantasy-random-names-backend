@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('names', {
+    return queryInterface.createTable('Names', {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
@@ -18,7 +18,7 @@ module.exports = {
         allowNull: false,
         references:{
           model: {
-            tableName: 'races',
+            tableName: 'Races',
           },
           key: 'id',
           deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
@@ -29,7 +29,7 @@ module.exports = {
         allowNull: false,
         references:{
           model: {
-            tableName: 'sexes',
+            tableName: 'Sexes',
           },
           key: 'id',
           deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
@@ -47,6 +47,6 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('names');
+    return queryInterface.dropTable('Names');
   }
 };
