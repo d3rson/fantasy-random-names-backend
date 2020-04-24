@@ -9,5 +9,5 @@ app.use(express.json());
 
 app.use(routes);
 app.listen(3333, () => {
-    console.log('api rodando uai')
+    console.log('/r 1d20')
 });
